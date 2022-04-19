@@ -7,22 +7,14 @@
     font-size: 14px;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(250, 250, 250);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
 .instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 80vh;
+    margin: 0 auto;
+    
 }
 
 .instagram-phone {
@@ -52,16 +44,19 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
+    max-width: 21rem;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
+    margin-bottom: 2rem;
 }
 
 .instagram-logo {
     height: 3rem;
+    margin-bottom: 1rem;
 }
 
 .profile-photo {
@@ -70,6 +65,7 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .profile-photo img {
@@ -88,7 +84,7 @@ body {
     margin-top: 1rem;
 }
 
-.not-account {
+.not-account, .links a {
     color: rgb(160,160 ,160);
 }
 
@@ -109,7 +105,7 @@ body {
 .download {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
 }
@@ -122,28 +118,44 @@ body {
 
 .download-app:nth-child(1) {
     background-image: url('./images/apple-button.png');
+    margin-right: 1rem;
 }
 
 .download-app:nth-child(2) {
     background-image: url('./images/googleplay-button.png');
 }
 
-@media(max-width:1024px) {
-    .instagram-wrapper {
-        width: 90%;
-    }
+.footer-wrapper {
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
 }
 
-@media(max-width: 650px) {
-    .instagram-wrapper {
-        width: 90%;
-    }
+.options {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
 
-    .instagram-phone {
-        display: none;
-    }
+.author {
+    font-size: 12px;
+    color: rgb(160,160 ,160);
+    margin-left: 2rem;
+}
 
-    .instagram-continue {
-        width: 100%;
-    }
+.links a {
+    padding: 0.5rem;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.links:nth-child(2){
+    margin-top: 0.5rem;
+}
+
+.datalist select {
+    background: none;
+    border: none;
+    color: rgb(160,160 ,160);
+    width: 6.2rem;
 }

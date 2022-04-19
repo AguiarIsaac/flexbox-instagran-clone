@@ -1,0 +1,19 @@
+@media(max-width:1500px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1199px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+}
